@@ -1,0 +1,17 @@
+header {
+    padding: 24px;
+    height: 67px;
+    img {
+      height: 19px; // Logo size
+    }
+  }
+
+  @media (min-width: 1280px) {
+    header {
+        padding: 64px 36px 52px 36px;
+        height: 151px;
+        img {
+          height: 35px; // Increased logo size for larger screens
+        }
+      }
+  }
