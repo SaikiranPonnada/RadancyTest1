@@ -1,0 +1,94 @@
+.profiles-container {
+  margin-bottom: 70px; // Adds spacing below the container for separation from other sections.
+  .indv-profile {
+    display: flex; // Arranges elements within each individual profile in a flexbox layout.
+    flex-direction: column; // Aligns items vertically in each profile.
+    align-items: center; // Centers the items horizontally.
+    margin-bottom: 35px; // Adds spacing below each individual profile.
+  }
+
+  .profile {
+    width: 180px; // Sets a fixed width
+    height: 180px; // Sets a fixed height
+    border-radius: 50%; // Makes the container circular.
+    overflow: hidden;// Ensures content stays within the circular boundary.
+    display: flex; // Centers the image within the circular container.
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+
+
+  img {
+    width: 100%; // Ensures the image fills the width of the profile container.
+    height: 100%; // Ensures the image fills the height of the profile container.
+  }
+
+  .profile-content-1,
+  .profile-content-2,
+  .profile-content-3 {
+    position: relative; // Enables positioning relative 
+    width: 60vw; // Sets the width of the content to 60% of the viewport width.
+    font-size: 16px;
+    font-style: italic; // Makes the text italic.
+    font-weight: 500;
+    line-height: 29px;
+    color: $textGrey;
+    margin-bottom: 27px;
+  }
+
+  .quote-icon {
+    position: absolute; // Positions the icon relative to its nearest positioned ancestor.
+    left: 0; // Aligns the icon to the left edge of the container.
+    width: 66px; // Sets the icon's width.
+    height: auto; // Maintains the aspect ratio of the icon.
+    z-index: 10; // Places the icon above other elements.
+    opacity: 0.1; // Reduces the icon's opacity for a translucent effect.
+  }
+
+  .quote-text {
+    position: relative;
+  }
+
+  h4 {
+    color: $textGreen;
+    font-weight: 500;
+    width: 60vw;
+    font-size: 16px;
+    line-height: 29px;
+    padding: 0;
+  }
+
+  .indv-profile:last-child {
+    margin-bottom: 0px; // Removes bottom margin for the last profile in the container.
+  }
+}
+
+@media (min-width: 1280px) {
+  .profiles-container {
+    margin-bottom: 136px;
+
+    display: grid; // Applies a grid layout to the container.
+    grid-template-columns: 1fr 2fr 1fr; // Divides the layout into three columns with relative widths.
+    grid-gap: 20px; // Adds spacing between grid items.
+    padding-left: 20px;
+    padding-right: 20px;
+    .indv-profile {
+      text-align: center;
+      margin-bottom: 0;
+      .profile-content-1,
+      .profile-content-3 {
+        width: 15vw;
+      }
+
+      .profile-content-2 {
+        width: 31vw;
+      }
+    }
+
+    h4 {
+      width: 15vw;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+// Variables
+$textGreen: #00945f; // Primary green color for text and borders
+$textGrey: #888888; // Grey color for secondary text
+$primaryBtnColor: #e97300; // Button color
+$profileBackgrounds: (#e8e8f2, #f4f0f1, #6a7677); // Background colors for profile sections
+
+// General Styles
+* {
+  box-sizing: border-box; // Ensures consistent box-sizing across elements
+  margin: 0; // Removes default margins
+}
+
+body {
+  text-align: center; // Centers content by default
+  font-family: Arial, Helvetica, sans-serif; //Font
+  margin: 0; // Removes default body margin
+}
+
+// Header Section
+@import "./headerSection";
+
+// Hero Section styles
+@import "./heroSection";
+
+// Page Container
+.page-container {
+  padding: 18px; // padding for content containers
+  padding-bottom: 0px;
+}
+
+// Investment Card
+@import "./investmentCardSection";
+
+// Advantage Cards
+@import "./advantageCardsSection";
+
+// Home Loan Container
+@import "./homeLoanSection";
+
+// Profiles Testimonials Container
+@import "./profileTestimonialsSection";
+
+.footer-separator {
+  border: 1px solid $textGreen;
+  margin: 0;
+}
+
+// Footer
+@import "./footer";
+
+// Media Queries for Larger Screens
+// General Styles
+@media (min-width: 1280px) {
+  body {
+    text-align: left; // Aligns content to the left for larger screens
+  }
+  .page-container {
+    padding: 35px; // Increased padding for larger screens
+    padding-bottom: 0px;
+  }
+}

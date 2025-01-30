@@ -1,0 +1,36 @@
+footer {
+  text-align: left;
+  padding: 26px 18px; // Adds padding inside the footer
+
+  p {
+    font-size: 11px;
+    color: $textGrey;
+    margin-top: 25px;
+    margin-bottom: 27px;
+
+    a {
+      color: #8c8c8c; // Sets the color of links inside the paragraph to a grey tone.
+    }
+  }
+
+  .privacy-statement {
+    color: #000;
+    font-size: 12px;
+    margin-bottom: 0; // Removes bottom margin
+  }
+}
+
+@media (min-width: 1280px) {
+  footer {
+    padding: 37px;
+
+    p {
+      margin-top: 27px;
+      margin-bottom: 29px;
+      font-size: 11px;
+    }
+    .privacy-statement {
+      font-size: 13px;
+    }
+  }
+}

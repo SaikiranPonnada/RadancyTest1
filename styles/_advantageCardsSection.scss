@@ -1,0 +1,99 @@
+.advantage-cards-container {
+  margin-bottom: 36px; // Adds spacing below the container
+
+  h1 {
+    color: $textGreen;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  hr {
+    display: flex; // Aligns the horizontal line
+    justify-self: center; // Centers the horizontal line
+    border: 1px solid $textGreen;
+    width: 73px;
+    margin-top: 20px;
+    margin-bottom: 26px;
+  }
+}
+
+.advantage-cards {
+  text-align: left; // Aligns text to the left within each card.
+
+  div {
+    
+    h3 {
+      color: $textGreen;
+      font-weight: 500;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: $textGrey;
+      line-height: 31px;
+      font-size: 16px;
+    }
+
+    a {
+      color: #759b24;
+      text-decoration: none; // Removes underline from the link.
+      line-height: 31px;
+      font-size: 16px;
+      margin-top: 14px;
+    }
+  }
+  div:last-child {
+    margin-bottom: 0px; // Removes the bottom margin for the last card.
+  }
+
+  .card-separator {
+    border: 1px solid #c2c2c2;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-separator-large {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .advantage-cards-container {
+    margin-bottom: 65px;
+
+    hr {
+      margin-top: 25px;
+      margin-bottom: 41px;
+    }
+  }
+  .advantage-cards {
+    display: flex;
+    flex-direction: column; // Stack cards in columns
+    gap: 100px; // Add spacing between the card groups
+
+    .card-group{
+      display: flex;
+      flex-direction: row; // Align items in a row
+      gap: 40px; // Add spacing between the cards in a group
+
+      div {
+        height: auto;
+        width: 50%;
+      }
+    }
+
+    .card-separator {
+      display: none;
+    }
+
+    .card-separator-large {
+      display: block;
+      border: 1px solid #c2c2c2;
+      width: 1px;
+      margin: 10px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+/* Container for the main image, overlay, and right-positioned image */
+.lady-img-container {
+  display: flex; // Flexbox Layout
+  align-self: center; // Centers the container vertically
+  height: 201px; // Default height for the hero section
+  overflow: hidden; // Prevents overflow from child elements
+  position: relative; // Enables positioning of child elements
+  margin-bottom: 24px; // Space below the container
+
+  .lady-img {
+    position: absolute; // Allows precise placement
+    top: -88px; // Adjusts image position vertically
+    left: -155px; // Adjusts image position horizontally
+    max-width: 880px; // Maximum width of the image
+    height: auto; // Maintains aspect ratio
+  }
+}
+
+@media (min-width: 1280px) {
+  .lady-img-container {
+    height: 449px;
+    margin-bottom: 44px;
+
+    .lady-img {
+      position: absolute;
+      top: -180px;
+      left: -350px;
+      max-width: 1920px;
+      height: auto;
+    }
+  }
+
+  // Overlay
+  .overlay {
+    position: absolute; // Absolute positioning for overlay
+    top: 0;
+    left: 500px; // Adjust overlay's starting position
+    width: 100%; // Full-width overlay
+    height: 1200px; // Full height for the overlay
+    z-index: 2; // Sets stacking order
+    opacity: 0.8; // Semi-transparent overlay
+  }
+}

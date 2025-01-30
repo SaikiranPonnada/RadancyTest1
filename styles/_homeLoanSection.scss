@@ -1,0 +1,38 @@
+.home-loan-container {
+  
+    margin-bottom: 33px; // Adds spacing below the container
+  
+    h1 {
+      background-color: $textGreen;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 31px; // Adjusts the line height for better readability.
+      padding: 20px 10px;
+    }
+  
+    p {
+      background-color: #ebf7f5;
+      margin: 0;
+      font-size: 16px;
+      padding: 21px 9px;
+      line-height: 31px; // Adjusts the line height for better readability.
+      text-align: left; // Aligns the paragraph text to the left.
+      color: $textGrey;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .home-loan-container {
+      text-align: center; // Centers the text for larger screens.
+      margin-bottom: 60px;
+
+      h1 {
+        padding: 20px;
+      }
+  
+      p {
+        padding: 30px 64px;
+      }
+    }
+  }
